@@ -1,0 +1,24 @@
+/* блоки на главной странице */
+@import "blocks/variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-main.scss";
+@import "blocks/range.scss";
+@import "blocks/product-week.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+
+/* блоки на странице каталога */
+@import "blocks/products.scss";
+@import "blocks/manufacturing-process.scss";
+@import "blocks/modal.scss";
+
+/* блоки на странице формы заказа */
+@import "blocks/order.scss";
+
+body {
+  min-width: 320px;
+
+}
