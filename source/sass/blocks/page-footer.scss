@@ -1,0 +1,29 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.social__link {
+  &--instagram {
+    background-image: url(../img/icon-insta.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--facebook {
+    background-image: url(../img/icon-fb.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--twitter {
+    background-image: url(../img/icon-twitter.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.copyright__link--icon-htmlacademy {
+  background-image: url(../img/htmlacademy.svg);
+  background-repeat: no-repeat;
+}

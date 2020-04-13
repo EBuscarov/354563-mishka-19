@@ -1,4 +1,13 @@
-body {
+.site-list__item {
+  list-style: none;
 
+  &--search {
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+  }
 
+  &--cart {
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+  }
 }

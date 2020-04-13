@@ -1,0 +1,28 @@
+.advantages__item {
+  list-style: none;
+  min-height: 100px;
+
+  &--ecology {
+    background: #ffffff url(../img/icon-feature-flower.svg) no-repeat;
+  }
+
+  &--scandinavia {
+    background: #ffffff url(../img/icon-feature-money.svg) no-repeat;
+  }
+
+  &--like {
+    background: #ffffff url(../img/icon-feature-heart.svg) no-repeat;
+  }
+
+  &--love {
+    background: #ffffff url(../img/icon-feature-ball.svg) no-repeat;
+  }
+
+  &--domestic {
+    background: #ffffff url(../img/icon-feature-rocket.svg) no-repeat;
+  }
+
+  &--wrap {
+    background: #ffffff url(../img/icon-feature-gift.svg) no-repeat;
+  }
+}
