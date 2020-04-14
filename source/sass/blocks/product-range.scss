@@ -1,17 +1,30 @@
 .product-range {
   min-height: 500px;
-  background: #cccccc url(../img/hero-mobile@1x.jpg) no-repeat 50% 0%;
+  background: #f1f1f1 url(../img/hero-mobile@1x.jpg) no-repeat 50% 0%;
+}
+
+.product-range__promo {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #010000;
 }
 
 .product-range__item {
+  min-height: 103px;
   list-style: none;
   &--light {
-    min-height: 103px;
-    background: #63d1bb url(../img/icon-interior.svg) no-repeat 90% 50%;
+    background-color: #63d1bb;
   }
 
   &--dark {
-    min-height: 103px;
-    background: #56c3b2 url(../img/icon-toy.svg) no-repeat 90% 50%;
+    background-color: #56c3b2;
   }
+}
+
+.product-range__link {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
 }
