@@ -1,1 +1,17 @@
+.main-nav {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
 
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.site-list__link,
+.user-list__link {
+  color: #000000;
+  text-decoration: none;
+}
