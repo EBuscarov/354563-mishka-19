@@ -19,6 +19,60 @@
 @import "blocks/order.scss";
 
 body {
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-title;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-title;
+}
+
+h3 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-title;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
