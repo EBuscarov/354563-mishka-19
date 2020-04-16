@@ -10,6 +10,14 @@
   list-style: none;
 }
 
+.site-list__item,
+.user-list__item {
+  padding-left: 76px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
 .site-list__link,
 .user-list__link {
   color: #000000;

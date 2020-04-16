@@ -1,13 +1,6 @@
-.site-list__item {
-  list-style: none;
-
-  &--search {
-    background-image: url(../img/icon-search.svg);
-    background-repeat: no-repeat;
-  }
-
-  &--cart {
-    background-image: url(../img/icon-cart.svg);
-    background-repeat: no-repeat;
-  }
+/* Шапка */
+.page-header__logo-image {
+  padding-left: 116px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
