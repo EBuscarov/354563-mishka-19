@@ -1,5 +1,7 @@
 /* блоки на главной странице */
+@import "normalize.scss";
 @import "variables.scss";
+@import "mixin.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
@@ -9,8 +11,11 @@
 @import "blocks/reviews.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
 
 /* блоки на странице каталога */
+@import "blocks/inner-main.scss";
 @import "blocks/products.scss";
 @import "blocks/manufacturing-process.scss";
 @import "blocks/modal.scss";

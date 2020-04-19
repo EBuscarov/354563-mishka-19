@@ -1,1 +1,53 @@
 /* Заказ */
+.order {
+  margin-bottom: 55px;
+}
+
+.order-form__group {
+  border: none;
+}
+
+.order-form__title {
+  margin-left: 29px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-greenlight;
+  text-transform: uppercase;
+}
+
+.order-form__list {
+  @include reset-list;
+}
+
+.order-form__item {
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="tel"] {
+  border: none;
+  border-bottom: solid 2px $color-black;
+}
+
+.order-form__textarea {
+  border: solid 2px #000000;
+}
+
+.order-form__button {
+  padding-left: 47px;
+  padding-top: 20px;
+  padding-right: 47px;
+  padding-bottom: 20px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700px;
+
+  background-color: $bg-white;
+  border: $border-button;
+}

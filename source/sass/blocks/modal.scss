@@ -1,1 +1,22 @@
 /* Окно попап */
+.modal__form-list {
+  @include reset-list;
+}
+
+.modal__button {
+  padding-left: 82px;
+  padding-top: 20px;
+  padding-right: 83px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-button-modal;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $bg-greenlight;
+
+  border: none;
+}

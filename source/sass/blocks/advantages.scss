@@ -1,5 +1,26 @@
 /* Преимущества */
+.advantages {
+  margin-bottom: 61px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.advantages__list {
+  padding: 0;
+}
+
+.advantages__item svg {
+  margin-bottom: 20px;
+}
+
 .advantages__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
   list-style: none;
   min-height: 100px;
 }
