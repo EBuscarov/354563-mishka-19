@@ -1,9 +1,12 @@
 .product-range {
+  margin-bottom: 34px;
   min-height: 500px;
+
   background: $bg-grey url("../img/hero-mobile@1x.jpg") no-repeat 50% 0%;
 }
 
 .product-range__promo {
+  margin-bottom: 120px;
   padding-left: 39px;
   padding-top: 93px;
   padding-right: 39px;
@@ -11,15 +14,19 @@
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
-  color: #010000;
   text-align: center;
+  color: #010000;
+}
+
+.product-range__list {
+  list-style: none;
 }
 
 .product-range__item {
   margin: 0;
-  padding: 0;
+  padding-left: 29px;
+  max-width: 320px;
   min-height: 103px;
-  list-style: none;
 
   &--light {
     background-color: $bg-greenlight;
@@ -31,6 +38,10 @@
 }
 
 .product-range__link {
+  margin: 0;
+  padding-left: 29px;
+  padding-top: 30px;
+
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;

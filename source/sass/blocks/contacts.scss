@@ -1,1 +1,32 @@
 /* Контакты */
+.contacts {
+  margin-bottom: 39px;
+}
+
+.contacts__title {
+  margin-bottom: 42px;
+}
+
+.contacts__list {
+  margin-bottom: 42px;
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+}
+
+.contacts__write {
+  padding-left: 52px;
+  padding-top: 19px;
+  padding-right: 52px;
+  padding-bottom: 19px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700px;
+  color: $color-button;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: $border-button;
+}

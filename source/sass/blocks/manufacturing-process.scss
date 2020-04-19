@@ -1,1 +1,30 @@
 /* Процесс производства */
+.manufacturing-process {
+  margin-bottom: 58px;
+}
+
+.manufacturing-process__wrapper {
+  border: solid 1px #ececec;
+}
+
+.manufacturing-process__title {
+  padding-left: 91px;
+  padding-top: 29px;
+  padding-bottom: 26px;
+}
+
+.manufacturing-process__button {
+  padding-left: 26px;
+  padding-top: 20px;
+  padding-right: 26px;
+  padding-bottom: 16px;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $color-text;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: $border-button;
+}

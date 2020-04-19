@@ -1,1 +1,36 @@
 /* Отзывы */
+.reviews {
+  margin-bottom: 45px;
+}
+
+.reviews__title {
+  margin-bottom: 38px;
+}
+
+.reviews__item {
+  margin-bottom: 36px;
+}
+
+.reviews__text {
+  margin-bottom: 40px;
+}
+
+.reviews__author-name {
+  margin-bottom: 36px;
+}
+
+.reviews__write {
+  padding-left: 81px;
+  padding-top: 19px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $color-text;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: $border-button;
+}

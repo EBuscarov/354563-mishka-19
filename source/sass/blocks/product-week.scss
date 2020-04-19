@@ -1,6 +1,36 @@
+.product-week {
+  margin-bottom: 61px;
+}
+
+.product-week__title {
+  margin-bottom: 8px;
+}
+
+.product-week__stock {
+  margin-bottom: 30px;
+}
+
 .product-week__stock a {
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: #63d1bb;
+}
+
+.product-week__description {
+  margin-bottom: 34px;
+}
+
+.product-week__list {
+  margin-bottom: 42px;
+}
+
+.product-week__picture {
+  margin-bottom: 29px;
+}
+
+.product-week__price {
+  margin-bottom: 28px;
+
+  text-align: center;
 }
