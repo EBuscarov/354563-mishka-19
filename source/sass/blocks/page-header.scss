@@ -1,6 +1,30 @@
 /* Шапка */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  height: 79px;
+}
+
 .page-header__logo-image {
   padding-left: 116px;
   padding-top: 22px;
+  padding-right: 118px;
   padding-bottom: 22px;
+}
+
+// Стили для планшета
+@media (min-width: $table-width) {
+  .page-header__logo {
+    height: 88px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 88px;
+  }
 }
