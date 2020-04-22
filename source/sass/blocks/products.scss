@@ -1,11 +1,30 @@
+.products {
+  width: 320px;
+
+  border: solid 2px orange; // временная рамка для сетки
+}
+
+.products__wrapper {
+  width: 260px;
+  margin: auto;
+
+}
+
 .product_list {
+  @include reset-list;
   list-style: none;
 }
 
 .product_item {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
 
   border: solid 1px #ececec;
+}
+
+.product__picture-link {
+  order: -1;
 }
 
 .product__description {
@@ -19,4 +38,18 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .products {
+    width: 668px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .products {
+    width: 1050px;
+  }
 }

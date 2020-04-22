@@ -1,11 +1,17 @@
 /* Внутренние страницы */
+.inner-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .inner-main__wrapper {
   margin-bottom: 30px;
-  padding-left: 42px;
-  padding-top: 76px;
-  padding-bottom: 74px;
+
+  text-align: center;
 
   background-color: $bg-grey;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .inner-main__title {
@@ -15,4 +21,18 @@
 .inner-main__intro {
   font-size: 13px;
   line-height: 24px;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .inner-main {
+    width: 668px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .inner-main {
+    width: 1050px;
+  }
 }
