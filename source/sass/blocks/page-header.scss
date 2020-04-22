@@ -6,25 +6,31 @@
 
 .page-header__logo {
   height: 79px;
+  text-align: center;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .page-header__logo-image {
-  padding-left: 116px;
   padding-top: 22px;
-  padding-right: 118px;
-  padding-bottom: 22px;
 }
 
 // Стили для планшета
-@media (min-width: $table-width) {
+@media (min-width: $tablet-width) {
   .page-header__logo {
     height: 88px;
+
+    border: solid 2px red; // временная рамка для сетки
   }
 }
 
 // Стили для десктопа
 @media (min-width: $desktop-width) {
   .page-header__logo {
+    width: 180px;
     height: 88px;
+    margin: 0 auto;
+
+    border: solid 2px yellow; // временная рамка для сетки
   }
 }
