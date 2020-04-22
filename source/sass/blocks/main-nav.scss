@@ -38,12 +38,12 @@
 
 // Стили для планшета
 @media (min-width: $tablet-width) {
-.main-nav {
-  width: auto;
-  margin: 0;
+  .main-nav {
+    width: auto;
+    margin: 0;
 
-  border: solid 2px red; // временная рамка для сетки
-}
+    border: solid 2px red; // временная рамка для сетки
+  }
 
   .main-nav__wrapper {
     display: flex;
