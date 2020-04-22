@@ -1,7 +1,24 @@
 /* Футер */
 .page-footer {
   width: 320px;
+  margin: 0 auto;
   height: 160px;
 
   background-color: #f1f1f1;
+
+  border: solid 2px orange; // временная рамка для сетки
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 668px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1050px;
+  }
 }
