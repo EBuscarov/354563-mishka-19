@@ -1,6 +1,10 @@
 /* Преимущества */
 .advantages {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 61px;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .advantages__title {
@@ -23,4 +27,18 @@
 
   list-style: none;
   min-height: 100px;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 668px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1050px;
+  }
 }

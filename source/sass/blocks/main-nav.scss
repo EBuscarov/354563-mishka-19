@@ -1,25 +1,106 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
   background-color: #ffffff;
+
+  border: solid 2px orange; // временная рамка для сетки
+}
+
+.main-nav__wrapper {
+  border: dotted 2px darkorange; // временная рамка для сетки
 }
 
 .main-nav__list {
-  list-style: none;
+  @include reset-list;
+
+  min-height: 79px;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
-.site-list__item,
-.user-list__item {
-  padding-left: 76px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin: 0;
+.site-list,
+.user-list {
+  min-height: 158px;
+
+  border: dotted 2px darkorange; // временная рамка для сетки
 }
 
 .site-list__link,
 .user-list__link {
   color: #000000;
   text-decoration: none;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+
+    border: solid 2px red; // временная рамка для сетки
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 668px;
+    margin: 0 auto;
+
+    border: dotted 2px red; // временная рамка для сетки
+  }
+
+  .main-nav__list {
+
+    border: solid 2px red; // временная рамка для сетки
+  }
+
+  .site-list,
+  .user-list {
+    min-height: 158px;
+
+    border: dotted 2px red; // временная рамка для сетки
+  }
+
+  .site-list {
+    width: 372px;
+  }
+
+  .user-list {
+    width: 399px;
+  }
+}
+
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .main-nav {
+
+    border: solid 2px yellow; // временная рамка для сетки
+  }
+
+  .main-nav__wrapper {
+    width: 1050px;
+
+    border: dotted 2px yellow; // временная рамка для сетки
+  }
+
+  .main-nav__list {
+
+    border: solid 2px yellow; // временная рамка для сетки
+  }
+
+  .site-list {
+    width: 470px;
+  }
+
+  .user-list {
+    width: 400px;
+  }
 }

@@ -1,5 +1,9 @@
 .product-week {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 61px;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .product-week__title {
@@ -33,4 +37,20 @@
   margin-bottom: 28px;
 
   text-align: center;
+}
+
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .product-week {
+    width: 668px;
+  }
+}
+
+
+// Стили для планшета
+@media (min-width: $desktop-width) {
+  .product-week {
+    width: 1050px;
+  }
 }

@@ -1,11 +1,17 @@
 .product-range {
+  width: 320px;
+  margin: 0 auto;
+  margin-top: -20px;
   margin-bottom: 34px;
   min-height: 500px;
 
   background: $bg-grey url("../img/hero-mobile@1x.jpg") no-repeat 50% 0%;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .product-range__promo {
+  margin: 0;
   margin-bottom: 120px;
   padding-left: 39px;
   padding-top: 93px;
@@ -16,9 +22,13 @@
   font-weight: 700;
   text-align: center;
   color: #010000;
+
+  border: dotted 2px orange; // временная рамка для сетки
 }
 
 .product-range__list {
+  @include reset-list;
+  width: 100%;
   list-style: none;
 }
 
@@ -35,6 +45,8 @@
   &--dark {
     background-color: $bg-greendark;
   }
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .product-range__link {
@@ -46,4 +58,25 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
+}
+
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .product-range {
+    width: 668px;
+  }
+
+  .product-range__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .product-range {
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
