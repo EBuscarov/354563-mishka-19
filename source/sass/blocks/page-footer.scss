@@ -9,9 +9,17 @@
   border: solid 2px orange; // временная рамка для сетки
 }
 
+.page-footer__wrapper {
+  width: 260px;
+}
+
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .page-footer {
+    width: 772px;
+  }
+
+  .page-footer__wrapper {
     width: 668px;
   }
 }
@@ -19,6 +27,10 @@
 // Стили для десктопа
 @media (min-width: $desktop-width) {
   .page-footer {
+    width: 1150px;
+  }
+
+  .page-footer__wrapper {
     width: 1050px;
   }
 }
