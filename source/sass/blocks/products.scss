@@ -6,7 +6,7 @@
 
 .products__wrapper {
   width: 260px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .product_list {
@@ -42,13 +42,23 @@
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .products {
+    width: 772px;
+  }
+
+  .products__wrapper {
     width: 668px;
+    margin: 0 auto;
   }
 }
 
 // Стили для десктопа
 @media (min-width: $desktop-width) {
   .products {
+    width: 1150px;
+  }
+
+  .products__wrapper {
     width: 1050px;
+    margin: 0 auto;
   }
 }

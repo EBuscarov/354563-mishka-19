@@ -1,6 +1,15 @@
 /* Контакты */
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 39px;
+
+  border: solid 2px orange; // временная рамка для сетки
+}
+
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -29,4 +38,24 @@
   text-transform: uppercase;
 
   border: $border-button;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 772px;
+  }
+
+  .contacts__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1150px;
+  }
+
+  .contacts__wrapper {
+    width: 1050px;
+  }
 }

@@ -7,6 +7,11 @@
   border: solid 2px orange; // временная рамка для сетки
 }
 
+.advantages__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .advantages__title {
   margin: 0;
   margin-bottom: 31px;
@@ -32,6 +37,10 @@
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .advantages {
+    width: 772px;
+  }
+
+  .advantages__wrapper {
     width: 668px;
   }
 }
@@ -39,6 +48,10 @@
 // Стили для десктопа
 @media (min-width: $desktop-width) {
   .advantages {
+    width: 1150px;
+  }
+
+  .advantages__wrapper {
     width: 1050px;
   }
 }

@@ -12,22 +12,19 @@
 }
 
 .main-nav__wrapper {
-  border: dotted 2px darkorange; // временная рамка для сетки
+  width: 260px;
+  margin: 0 auto;
 }
 
 .main-nav__list {
   @include reset-list;
 
   min-height: 79px;
-
-  border: solid 2px orange; // временная рамка для сетки
 }
 
 .site-list,
 .user-list {
   min-height: 158px;
-
-  border: dotted 2px darkorange; // временная рамка для сетки
 }
 
 .site-list__link,
@@ -41,8 +38,6 @@
   .main-nav {
     width: auto;
     margin: 0;
-
-    border: solid 2px red; // временная рамка для сетки
   }
 
   .main-nav__wrapper {
@@ -52,20 +47,11 @@
 
     width: 668px;
     margin: 0 auto;
-
-    border: dotted 2px red; // временная рамка для сетки
-  }
-
-  .main-nav__list {
-
-    border: solid 2px red; // временная рамка для сетки
   }
 
   .site-list,
   .user-list {
     min-height: 158px;
-
-    border: dotted 2px red; // временная рамка для сетки
   }
 
   .site-list {
@@ -80,20 +66,9 @@
 
 // Стили для десктопа
 @media (min-width: $desktop-width) {
-  .main-nav {
-
-    border: solid 2px yellow; // временная рамка для сетки
-  }
-
   .main-nav__wrapper {
     width: 1050px;
-
-    border: dotted 2px yellow; // временная рамка для сетки
-  }
-
-  .main-nav__list {
-
-    border: solid 2px yellow; // временная рамка для сетки
+    margin: 0 auto;
   }
 
   .site-list {

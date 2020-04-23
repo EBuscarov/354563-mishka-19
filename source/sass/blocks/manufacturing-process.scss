@@ -1,9 +1,15 @@
 /* Процесс производства */
 .manufacturing-process {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 58px;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .manufacturing-process__wrapper {
+  width: 260px;
+  margin: 0 auto;
   border: solid 1px #ececec;
 }
 
@@ -27,4 +33,24 @@
   text-transform: uppercase;
 
   border: $border-button;
+}
+
+@media (min-width: $tablet-width) {
+  .manufacturing-process {
+    width: 772px;
+  }
+
+  .manufacturing-process__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacturing-process {
+    width: 1150px;
+  }
+
+  .manufacturing-process__wrapper {
+    width: 1050px;
+  }
 }
