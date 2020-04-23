@@ -1,4 +1,16 @@
 /* Окно попап */
+.modal {
+  width: 320px;
+  margin: 0 auto;
+
+  border: solid 2px orange; // временная рамка для сетки
+}
+
+.modal__wrapper {
+  width: 260px;
+  margin: auto;
+}
+
 .modal__form-list {
   @include reset-list;
 }
@@ -19,4 +31,24 @@
   background-color: $bg-greenlight;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 769px;
+  }
+
+  .modal__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 1150px;
+  }
+
+  .modal__wrapper {
+    width: 1050px;
+  }
 }
