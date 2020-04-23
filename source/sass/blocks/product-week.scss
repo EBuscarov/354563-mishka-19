@@ -6,6 +6,11 @@
   border: solid 2px orange; // временная рамка для сетки
 }
 
+.product-week__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .product-week__title {
   margin-bottom: 8px;
 }
@@ -43,7 +48,12 @@
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .product-week {
+    width: 772px;
+  }
+
+  .product-week__wrapper {
     width: 668px;
+    margin: 0 auto;
   }
 }
 
@@ -51,6 +61,11 @@
 // Стили для планшета
 @media (min-width: $desktop-width) {
   .product-week {
+    width: 1150px;
+  }
+
+  .product-week__wrapper {
     width: 1050px;
+    margin: 0 auto;
   }
 }
