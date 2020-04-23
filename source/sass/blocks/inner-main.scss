@@ -2,16 +2,23 @@
 .inner-main {
   width: 320px;
   margin: 0 auto;
+
+  border: solid 2px orange; // временная рамка для сетки
 }
 
 .inner-main__wrapper {
+  width: auto;
+  margin: 0;
   margin-bottom: 30px;
 
   text-align: center;
 
   background-color: $bg-grey;
+}
 
-  border: solid 2px orange; // временная рамка для сетки
+.inner-main__text {
+  width: 260px;
+  margin: 0 auto;
 }
 
 .inner-main__title {
@@ -19,6 +26,8 @@
 }
 
 .inner-main__intro {
+  margin-bottom: 30px;
+
   font-size: 13px;
   line-height: 24px;
 }
@@ -26,13 +35,39 @@
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .inner-main {
+    width: 772px;
+  }
+
+  .inner-main__wrapper {
+    margin-bottom: 80px;
+  }
+
+  .inner-main__text {
     width: 668px;
+    margin: 0 auto;
+  }
+
+  .inner-main__intro {
+    margin-bottom: 81px;
   }
 }
 
 // Стили для десктопа
 @media (min-width: $desktop-width) {
   .inner-main {
+    width: 1150px;
+  }
+
+  .inner-main__intro {
+    margin-bottom: 81px;
+  }
+
+  .inner-main__wrapper {
+    margin-bottom: 129px;
+  }
+
+  .inner-main__text {
     width: 1050px;
+    margin: 0 auto;
   }
 }

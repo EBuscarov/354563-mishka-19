@@ -1,15 +1,23 @@
 /* Заказ */
 .order {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 55px;
 }
 
+.order-form {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .order-form__group {
+  margin: 0;
+  padding: 0;
+
   border: none;
 }
 
 .order-form__title {
-  margin-left: 29px;
-
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
@@ -50,4 +58,38 @@ input[type="tel"] {
 
   background-color: $bg-white;
   border: $border-button;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .order {
+    width: 772px;
+    margin: 0 auto;
+  }
+
+  .order-form {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    height: 88px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .order {
+    width: 1150px;
+    margin: 0 auto;
+  }
+
+  .order-form {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    height: 88px;
+  }
 }
