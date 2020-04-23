@@ -8,7 +8,7 @@
 
 .modal__wrapper {
   width: 260px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .modal__form-list {
@@ -35,11 +35,11 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-    width: 769px;
+    width: 768px;
   }
 
   .modal__wrapper {
-    width: 668px;
+    width: 566px;
   }
 }
 
@@ -49,6 +49,6 @@
   }
 
   .modal__wrapper {
-    width: 1050px;
+    width: 566px;
   }
 }
