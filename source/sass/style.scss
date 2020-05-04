@@ -4,6 +4,8 @@
 @import "mixin.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
 @import "blocks/page-main.scss";
 @import "blocks/product-range.scss";
 @import "blocks/product-week.scss";
@@ -23,6 +25,20 @@
 
 /* блоки на странице формы заказа */
 @import "blocks/order.scss";
+
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
 
 body {
   font-size: 15px;
@@ -62,9 +78,7 @@ h3 {
   color: $color-title;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -74,7 +88,7 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: insert(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }

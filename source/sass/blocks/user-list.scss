@@ -1,0 +1,56 @@
+.user-list__search,
+.user-list__cart {
+  position: relative;
+
+  display: block;
+  padding: 27px 45px;
+  padding-right: 0;
+
+  color: #000000;
+
+  border-bottom: solid 1px #ececec;
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 2px;
+
+  opacity: 0.2;
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  top: 32px;
+  left: 0;
+
+  opacity: 0.2;
+}
+
+.user-list a[href] {
+  &:hover {
+    color: #666666;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:hover .user-list__search-icon,
+  &:hover .user-list__cart-icon {
+    opacity: 1;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  &:active .user-list__search-icon,
+  &:active .user-list__cart-icon {
+    opacity: 0.3;
+
+    path {
+      fill: #63d1bb;
+    }
+  }
+}
