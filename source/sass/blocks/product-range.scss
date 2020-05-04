@@ -6,8 +6,6 @@
   min-height: 500px;
 
   background: $bg-grey url("../img/hero-mobile@1x.jpg") no-repeat 50% 0%;
-
-  border: solid 2px orange; // временная рамка для сетки
 }
 
 .product-range__wrapper {
@@ -27,8 +25,6 @@
   font-weight: 700;
   text-align: center;
   color: #010000;
-
-  border: dotted 2px orange; // временная рамка для сетки
 }
 
 .product-range__list {
