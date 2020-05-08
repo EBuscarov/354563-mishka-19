@@ -12,10 +12,12 @@
   z-index: 2;
 
   display: block;
-  width: 79px;
-  height: 79px;
+  width: 78px;
+  height: 78px;
 
   cursor: pointer;
+
+  background-color: #ffffff;
   border: none;
 }
 
@@ -102,22 +104,17 @@
     margin: 0;
   }
 
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
 
     width: 668px;
     margin: 0 auto;
-  }
-
-  .site-list {
-    min-height: 158px;
-    width: 372px;
-  }
-
-  .user-list {
-    width: 399px;
   }
 }
 
@@ -126,14 +123,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     width: 1050px;
-    margin: 0 auto;
-  }
-
-  .site-list {
-    width: 470px;
-  }
-
-  .user-list {
-    width: 400px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

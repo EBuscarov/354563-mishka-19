@@ -1,7 +1,7 @@
 .products {
   width: 320px;
 
-  border: solid 2px orange; // временная рамка для сетки
+  //border: solid 2px orange; // временная рамка для сетки
 }
 
 .products__wrapper {
@@ -55,6 +55,7 @@
 @media (min-width: $desktop-width) {
   .products {
     width: 1150px;
+    margin-top: -62px;
   }
 
   .products__wrapper {

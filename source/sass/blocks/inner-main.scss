@@ -3,7 +3,7 @@
   width: 320px;
   margin: 0 auto;
 
-  border: solid 2px orange; // временная рамка для сетки
+  //border: solid 2px orange; // временная рамка для сетки
 }
 
 .inner-main__wrapper {
@@ -39,7 +39,11 @@
   }
 
   .inner-main__wrapper {
+    height: 226px;
     margin-bottom: 80px;
+    margin-top: -59px;
+
+    border-top: solid 1px #ececec;
   }
 
   .inner-main__text {
@@ -63,6 +67,7 @@
   }
 
   .inner-main__wrapper {
+    margin-top: -62px;
     margin-bottom: 129px;
   }
 

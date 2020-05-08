@@ -1,14 +1,19 @@
-.user-list__search,
-.user-list__cart {
+.user-list__item {
   position: relative;
 
-  display: block;
   padding: 27px 45px;
   padding-right: 0;
 
-  color: #000000;
-
   border-bottom: solid 1px #ececec;
+}
+
+.user-list__search,
+.user-list__cart {
+  color: #000000;
+}
+
+.delivery-information {
+  display: none;
 }
 
 .user-list__search-icon {
@@ -53,4 +58,59 @@
       fill: #63d1bb;
     }
   }
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    height: 88px;
+  }
+
+  .user-list__search {
+    font-size: 0;
+
+    border-bottom: none;
+  }
+
+  .user-list__item {
+    margin: 0;
+    padding: 31px 0;
+    padding-left: 83px;
+
+    border: none;
+    border-left: solid 1px #ececec;
+  }
+
+  .user-list__search-icon {
+    top: 36px;
+    left: 35px;
+  }
+
+  .user-list__cart-icon {
+    top: 34px;
+    left: 32px;
+  }
+
+  .delivery-information {
+    position: absolute;
+    bottom: -40px;
+    left: 34px;
+
+    display: block;
+    width: 250px;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: &$desktop-width) {
+
 }

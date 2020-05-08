@@ -20,14 +20,44 @@
 
 // Стили для планшета
 @media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+
+    width: 772px;
+    margin: 0 auto;
+
+    background-color: transparent;
+  }
+
   .page-header__logo {
-    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+
+    z-index: 1;
+  }
+
+  .page-header__logo-image {
+    margin: 0;
+    padding: 22px 0;
   }
 }
 
 // Стили для десктопа
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: 1150px;
+  }
+
   .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 150px;
     height: 88px;
+    margin: 0 auto;
+    z-index: 1;
   }
 }
