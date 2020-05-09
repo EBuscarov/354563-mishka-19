@@ -91,7 +91,9 @@
 // Стили для планшета
 @media (min-width: $tablet-width) {
   .product-range {
+    position: relative;
     width: 772px;
+    height: 746px;
     margin-top: -59px;
 
     background: $bg-grey url("../img/hero-tablet@1x.jpg") no-repeat 50% 0%;
@@ -101,15 +103,60 @@
 
   .product-range__wrapper {
     width: 668px;
+    height: 746px;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-range__promo {
+    margin: 0;
+    padding-top: 152px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-range__item {
+    height: 119px;
+    width: 334px;
   }
 
   .product-range__list {
     position: initial;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 
-    //width: auto;
+    width: auto;
+  }
+
+  .product-range__link {
+    padding-left: 35px;
+    padding-top: 26px;
+    padding-right: 185px;
+    padding-bottom: 34px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .product-range__item--interior {
+    top: 28px;
+    right: 37px;
+  }
+
+  .product-range__item--toys {
+    top: 30px;
+    right: 34px;
+  }
+
+  .bg-zigzag {
+    position: absolute;
+    bottom: -10px;
+    width: 770px;
+    height: 24px;
   }
 }
 
@@ -118,9 +165,32 @@
   .product-range {
     width: 1150px;
     margin-top: -62px;
+
+    background: $bg-grey url("../img/hero-desktop@1x.jpg") no-repeat 50% 0%;
   }
 
   .product-range__wrapper {
     width: 1050px;
+  }
+
+  .product-range__promo {
+    margin: 0;
+    padding-top: 154px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .product-range__item {
+    width: 525px;
+  }
+
+  .product-range__link {
+    padding-right: 377px;
+  }
+
+  .bg-zigzag {
+    width: 1250px;
+    height: 34px;
   }
 }
