@@ -63,8 +63,6 @@
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-
-  //border: solid 1px red;
 }
 
 .product-range__item--interior {
@@ -95,6 +93,7 @@
     width: 772px;
     height: 746px;
     margin-top: -59px;
+    margin-bottom: 44px;
 
     background: $bg-grey url("../img/hero-tablet@1x.jpg") no-repeat 50% 0%;
 
@@ -120,7 +119,7 @@
   }
 
   .product-range__item {
-    height: 119px;
+    height: 121px;
     width: 334px;
   }
 
@@ -133,8 +132,8 @@
   }
 
   .product-range__link {
-    padding-left: 35px;
-    padding-top: 26px;
+    padding-left: 36px;
+    padding-top: 28px;
     padding-right: 185px;
     padding-bottom: 34px;
 
