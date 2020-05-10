@@ -1,9 +1,8 @@
 .product-week {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   margin-bottom: 61px;
-
-  border: solid 2px orange; // временная рамка для сетки
 }
 
 .product-week__wrapper {
@@ -12,11 +11,14 @@
 }
 
 .product-week__title {
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .product-week__stock {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  text-transform: uppercase;
 }
 
 .product-week__stock a {
@@ -27,21 +29,61 @@
 }
 
 .product-week__description {
-  margin-bottom: 34px;
+  margin: 0;
+  padding-bottom: 19px;
+  line-height: 24px;
 }
 
 .product-week__list {
-  margin-bottom: 42px;
+  padding-bottom: 25px;
 }
 
-.product-week__picture {
-  margin-bottom: 29px;
+td {
+  border-bottom: solid 1px #ececec;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 6px;
+  padding-right: 25px;
+}
+
+.product-week__picture-wrapper {
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .product-week__price {
-  margin-bottom: 28px;
-
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
+}
+
+.product-week__order {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.button {
+  display: block;
+  padding: 14px 83px;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+
+  background-color: #ffffff;
+  border: solid 2px #444444;
+}
+
+.product-week__bg-line {
+  position: absolute;
+  width: 320px;
+  left: 0;
 }
 
 
@@ -52,20 +94,136 @@
   }
 
   .product-week__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 668px;
     margin: 0 auto;
+  }
+
+  .product-week__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product-week__stock {
+    width: 70px;
+    padding-top: 10px;
+    padding-right: 28px;
+    margin-bottom: 52px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .product-week__stock a {
+    line-height: 17px;
+  }
+
+  .product-week__content {
+    position: relative;
+    width: 100%;
+  }
+
+  .product-week__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+  }
+
+  .product-week__description {
+    padding-bottom: 38px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-week__list {
+    padding-bottom: 52px;
+  }
+
+  td {
+    padding-bottom: 7px;
+    padding-right: 0;
+  }
+
+  .product-week__price {
+    padding-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .button {
+    padding: 14px 98px;
+  }
+
+  .product-week__picture-wrapper {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    order: 1;
+  }
+
+  .product-week__bg-line {
+    width: 772px;
+    left: -52px;
+    bottom: -44px;
+    transform: rotate(180deg);
   }
 }
 
 
-// Стили для планшета
+// Стили для десктопа
 @media (min-width: $desktop-width) {
   .product-week {
     width: 1150px;
+    height: 709px;
   }
 
   .product-week__wrapper {
     width: 1050px;
     margin: 0 auto;
+    justify-content: center;
+  }
+
+  .product-week__title {
+    position: absolute;
+    top: 78px;
+    left: 220px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+  }
+
+  .product-week__stock {
+    position: absolute;
+    top: 93px;
+    left: 97px;
+    margin: 0;
+    padding: 0;
+    order: -1;
+  }
+
+  .product-week__content-wrapper {
+    margin-top: 184px;
+    margin-left: 176px;
+  }
+
+  .product-week__description {
+    padding-bottom: 50px;
+  }
+
+  .product-week__list {
+    padding-bottom: 106px;
+  }
+
+  .product-week__picture-wrapper {
+    top: 26px;
+  }
+
+  .product-week__bg-line {
+    width: 1060px;
+    //height: 15px;
+    left: 0;
+    bottom: -68px;
   }
 }
