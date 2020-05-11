@@ -1,3 +1,32 @@
 .social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  padding: 23px 0;
+
   list-style: none;
+}
+
+.social__item {
+  padding-right: 40px;
+}
+
+.social__item:last-child {
+  padding-right: 0;
+}
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding: 0;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding: 0;
+  }
 }

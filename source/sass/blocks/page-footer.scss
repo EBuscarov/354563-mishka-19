@@ -1,16 +1,28 @@
 /* Футер */
 .page-footer {
   width: 320px;
-  margin: 0 auto;
   height: 160px;
+  margin: 0 auto;
 
   background-color: #f1f1f1;
-
-  border: solid 2px orange; // временная рамка для сетки
 }
 
 .page-footer__wrapper {
   width: 260px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-around;
 }
 
 // Стили для планшета
@@ -20,7 +32,22 @@
   }
 
   .page-footer__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 668px;
+    height: 143px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    padding-right: 160px;
+  }
+
+  .page-footer__social {
+    border: none;
+    padding-top: 7px;
+    padding-right: 84px;
   }
 }
 
@@ -32,5 +59,14 @@
 
   .page-footer__wrapper {
     width: 1050px;
+    //border: solid 1px red;
+  }
+
+  .page-footer__logo {
+    padding-right: 351px;
+  }
+
+  .page-footer__social {
+    padding-right: 273px;
   }
 }

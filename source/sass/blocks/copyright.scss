@@ -1,10 +1,41 @@
 .copyright__text {
-  padding-left: 69px;
-  padding-top: 28px;
-  padding-right: 30px;
-  padding-bottom: 31px;
+  margin: 0;
+  padding-left: 22px;
+  padding-top: 26px;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.copyright__link {
+  padding-top: 20px;
+  padding-right: 24px;
+}
+
+
+// Стили для планшета
+@media (min-width: $tablet-width) {
+  .copyright {
+    align-items: center;
+  }
+
+  .copyright__text {
+    padding: 0;
+    padding-right: 28px;
+    //padding-top: 63px;
+  }
+
+  .copyright__link {
+    padding: 0;
+    padding-top: 14px;
+  }
+}
+
+// Стили для десктопа
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    padding: 0;
+    padding-right: 30px;
+  }
 }
